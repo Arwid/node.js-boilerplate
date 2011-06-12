@@ -20,13 +20,18 @@
 +blueprint-scaffolding
 
 html
-  background: #eee
+  :background #fff
 
 body
-  padding: 54px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  :font 14px/24px helvetica, arial, sans-serif
 a
-  color: #00B7FF
+  :color #00B7FF
+
+#main
+  :background white
 
 @import layouts/header
 @import layouts/footer
+
+#header-inner, #headline-inner, #footer-inner, #main
+  +container

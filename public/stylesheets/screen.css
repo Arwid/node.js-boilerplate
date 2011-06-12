@@ -503,13 +503,6 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 25, ../src/partials/_two_col.sass */
-body.two-col #container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-}
 /* line 27, ../src/partials/_two_col.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
@@ -1767,53 +1760,163 @@ form.inline p {
 
 /* line 22, ../src/screen.sass */
 html {
-  background: #eeeeee;
+  background: white;
 }
 
 /* line 25, ../src/screen.sass */
 body {
-  padding: 54px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px/24px helvetica, arial, sans-serif;
 }
 
-/* line 28, ../src/screen.sass */
+/* line 27, ../src/screen.sass */
 a {
   color: #00b7ff;
 }
 
-/* line 1, ../src/layouts/_header.sass */
-header {
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 4, ../src/layouts/_header.sass */
-header h1 {
-  float: left;
+/* line 30, ../src/screen.sass */
+#main {
+  background: white;
 }
 
-/* line 7, ../src/layouts/_header.sass */
-ul#nav {
-  float: right;
-  margin-top: 25px;
+/* line 1, ../src/layouts/_header.sass */
+header {
+  background: black url(/images/header-bg.jpg) no-repeat center top;
+}
+
+/* line 4, ../src/layouts/_header.sass */
+#header-inner {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  height: 84px;
+}
+
+/* line 9, ../src/layouts/_header.sass */
+#logo {
+  position: absolute;
+  bottom: 11px;
+  width: 227px;
+  height: 55px;
+  background: url(/images/logo3.png) no-repeat;
+  text-indent: -9999px;
+}
+
+/* line 17, ../src/layouts/_header.sass */
+#nav {
+  position: absolute;
+  bottom: 24px;
+  right: 40px;
   line-height: 20px;
 }
-/* line 12, ../src/layouts/_header.sass */
-ul#nav li {
-  display: inline;
-  float: left;
-  margin-left: 40px;
-  list-style: none;
-}
-/* line 18, ../src/layouts/_header.sass */
-ul#nav li a {
+/* line 23, ../src/layouts/_header.sass */
+#nav a {
   color: #cccccc;
   text-decoration: none;
 }
-/* line 21, ../src/layouts/_header.sass */
-ul#nav li a:hover {
-  hover: #009933;
+/* line 26, ../src/layouts/_header.sass */
+#nav a:hover {
+  color: #009933;
 }
-/* line 23, ../src/layouts/_header.sass */
-ul#nav li a.active {
+/* line 28, ../src/layouts/_header.sass */
+#nav a.active {
   color: white;
+}
+/* line 31, ../src/layouts/_header.sass */
+#nav .item {
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  float: left;
+  display: block;
+  list-style-type: none;
+  padding: 0 22px;
+}
+
+/* Headline */
+/* line 41, ../src/layouts/_header.sass */
+#headline {
+  background: black url(/images/bg.jpg) no-repeat center top;
+}
+
+/* line 44, ../src/layouts/_header.sass */
+#headline-inner {
+  height: 300px;
+}
+/* line 47, ../src/layouts/_header.sass */
+#headline-inner h1 {
+  width: 718px;
+  height: 79px;
+  background: url(/images/headline.png) no-repeat;
+  text-indent: -9999px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+/* line 56, ../src/layouts/_header.sass */
+#headline-inner #signup {
+  width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 61, ../src/layouts/_header.sass */
+#headline-inner #signup p {
+  color: white;
+  font-size: 14px;
+  font-family: Verdana;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
+/* line 67, ../src/layouts/_header.sass */
+#headline-inner #signup p span {
+  font-weight: 900;
+}
+/* line 70, ../src/layouts/_header.sass */
+#headline-inner #signup input[type='submit'] {
+  width: 175px;
+  height: 37px;
+  background: url(/images/request-btn.png);
+  text-indent: -9999px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* line 80, ../src/layouts/_header.sass */
+#headline-inner #signup input[type='text'] {
+  outline: none;
+  font-size: 21px;
+  width: 350px;
+  margin: 0;
+  padding: 5px 10px;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #d2d2d2));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #d2d2d2 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #d2d2d2 100%);
+}
+/* line 89, ../src/layouts/_header.sass */
+#headline-inner #signup form input {
+  float: left;
+}
+
+/* line 92, ../src/layouts/_header.sass */
+#technologies {
+  background: #dddddd;
+}
+
+/* line 94, ../src/layouts/_header.sass */
+#technologies-inner {
+  height: 75px;
+}
+
+/* line 36, ../src/screen.sass */
+#header-inner, #headline-inner, #footer-inner, #main {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
 }

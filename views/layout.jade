@@ -21,20 +21,25 @@ html(class='no-js', lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     
     //- link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/screen.css')
-    link(rel='stylesheet', href='/stylesheets/print.css')
+    link(rel='stylesheet', href='/stylesheets/screen.css', media='screen, projection')
+    link(rel='stylesheet', href='/stylesheets/print.css', media='print')
     /if lt IE 8
       link(rel='stylesheet', href='/stylesheets/ie.css')
       
     script(src='js/libs/modernizr-2.0.min.js')
     script(src='js/libs/respond.min.js')
     
-  body.bp.two-col
+  body.bp.two-col  
     #container
-      header!= partial('_header.jade')
+      header
+        #header-inner!= partial('_header.jade')
       #headline
+        #headline-inner!= partial('_headline.jade')
+      #technologies
+        #technologies-inner!= partial('_technologies.jade')
       #main(role='main')!= body
-      footer!= partial('_footer.jade')
+      footer
+        #footer-inner!= partial('_footer.jade')
     
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js')
     script window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.js"><\\/script>')

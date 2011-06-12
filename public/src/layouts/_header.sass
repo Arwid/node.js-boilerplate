@@ -1,24 +1,95 @@
 header
+	:background black url(/images/header-bg.jpg) no-repeat center top
+
+#header-inner
 	+clearfix
+	:position relative
+	:height 84px
+	
+#logo
+	:position absolute
+	:bottom 11px
+	:width 227px
+	:height 55px
+	:background url(/images/logo3.png) no-repeat
+	:text-indent -9999px
+		
+#nav
+	:position absolute
+	:bottom 24px
+	:right 40px
+	:line-height 20px
+
+	a
+		:color #ccc
+		:text-decoration none
+	a:hover
+		:color #009933
+	a.active
+		:color #fff
+		
+	.item
+		:font-size 14px
+		:line-height 20px
+		:height 20px
+		:float left
+		:display block
+		:list-style-type none
+		:padding 0 22px
+		
+/* Headline */
+#headline
+	:background black url(/images/bg.jpg) no-repeat center top
+	
+#headline-inner
+	:height 300px
 	
 	h1
-		:float left
+		:width 718px
+		:height 79px
+		:background url(/images/headline.png) no-repeat
+		:text-indent -9999px
+		:margin 0 auto
+			:top 50px
+			:bottom 30px
+			
+	#signup
+		:width 560px
+		:margin 0 auto
+		:text-align center
 		
-ul#nav
-	:float right
-	:margin-top 25px
-	:line-height 20px
-	
-	li
-		:display inline
-		:float left
-		:margin-left 40px
-		:list-style none
-		
-		a
-			:color #ccc
-			:text-decoration none
-		a:hover
-			:hover #009933
-		a.active
+		p
 			:color #fff
+			:font-size 14px
+			:font-family Verdana
+			:margin-bottom 8px
+			:font-weight 100
+			span
+				:font-weight 900
+				
+		input[type='submit']
+			:width 175px
+			:height 37px
+			:background url(/images/request-btn.png)
+			:text-indent -9999px
+			:border none
+			:outline none
+			:margin-left 10px
+			:cursor pointer
+		
+		input[type='text']
+			:outline none
+			:font-size 21px
+			:width 350px
+			:margin 0
+			:padding 5px 10px
+			+border-radius(4px, 4px)
+			+linear-gradient(color-stops(white, #d2d2d2))
+			
+		form input
+			:float left
+	
+#technologies
+	:background #dddddd
+#technologies-inner
+	:height 75px

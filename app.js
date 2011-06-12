@@ -8,9 +8,6 @@
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(express.cookieParser());
-    app.use(express.session({
-      secret: 'your secret here'
-    }));
     app.use(app.router);
     return app.use(express.static(__dirname + '/public'));
   });
@@ -25,7 +22,7 @@
   });
   app.get('/', function(req, res) {
     return res.render('index', {
-      title: 'Application Title'
+      title: 'Vertex.IO'
     });
   });
   if (!module.parent) {
