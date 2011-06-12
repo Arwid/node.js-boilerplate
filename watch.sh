@@ -2,4 +2,4 @@
 
 compass watch public/ &
 
-coffee --watch --compile app.coffee &
+#coffee --watch --compile app.coffee &
