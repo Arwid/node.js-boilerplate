@@ -329,7 +329,7 @@ body.bp .bottom {
 }
 /* line 8, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 body.bp .showgrid {
-  background: url('/images/grid.png?1300244513');
+  background: url('/images/grid.png?1307865565');
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .error {
@@ -1572,7 +1572,7 @@ input.span-24, textarea.span-24, select.span-24 {
 
 /* line 8, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 .showgrid {
-  background: url('/images/grid.png?1300244513');
+  background: url('/images/grid.png?1307865565');
 }
 
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
@@ -1689,13 +1689,11 @@ fieldset {
 }
 
 /* line 62, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-input.text, input.title, input[type=email], input[type=text], input[type=password],
-textarea, select {
+input.text, input.title, input[type=email], input[type=text], input[type=password], textarea, select {
   border: 1px solid #bbbbbb;
 }
 /* line 64, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:focus, input[type=password]:focus,
-textarea:focus, select:focus {
+input.text:focus, input.title:focus, input[type=email]:focus, input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus {
   border: 1px solid #666666;
 }
 
@@ -1781,4 +1779,41 @@ body {
 /* line 28, ../src/screen.sass */
 a {
   color: #00b7ff;
+}
+
+/* line 1, ../src/layouts/_header.sass */
+header {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 4, ../src/layouts/_header.sass */
+header h1 {
+  float: left;
+}
+
+/* line 7, ../src/layouts/_header.sass */
+ul#nav {
+  float: right;
+  margin-top: 25px;
+  line-height: 20px;
+}
+/* line 12, ../src/layouts/_header.sass */
+ul#nav li {
+  display: inline;
+  float: left;
+  margin-left: 40px;
+  list-style: none;
+}
+/* line 18, ../src/layouts/_header.sass */
+ul#nav li a {
+  color: #cccccc;
+  text-decoration: none;
+}
+/* line 21, ../src/layouts/_header.sass */
+ul#nav li a:hover {
+  hover: #009933;
+}
+/* line 23, ../src/layouts/_header.sass */
+ul#nav li a.active {
+  color: white;
 }
