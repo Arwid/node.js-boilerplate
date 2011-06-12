@@ -1,0 +1,15 @@
+= Basic Node.js Site Structure
+
+== Utilizing
+Node.js
+Express.js
+CoffeeScript
+Jade
+Compass/Sass/Blueprint
+
+== Watch files
+
+compass watch public/ &
+
+
+TODO: need watch for CoffeeScripts
