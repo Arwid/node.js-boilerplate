@@ -9,7 +9,4 @@ Compass/Sass/Blueprint
 
 == Watch files
 
-compass watch public/ &
-
-
-TODO: need watch for CoffeeScripts
+look at watch.sh
