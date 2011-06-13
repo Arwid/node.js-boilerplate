@@ -1,8 +1,14 @@
 
 #signup
-  p.
+  p.success.
+    <strong>Thank you!</strong> You've been added to our list and will hear from us soon.
+  p.message.
     <span>We're in private beta.</span>
      Sign up below to get an early invite.
-  form(action="/signup", method="post")
+  p.error.
+    Invalid Email
+  form(id="signup_form", action="/signup", method="post")
     input(id="email",name="email",type="text",size="30",placeholder="Enter Your Email")
+    input(id="check",type="hidden",value="somevalue")
     input(name="commit",type="submit",value="Sign up",src="")
+    .loading

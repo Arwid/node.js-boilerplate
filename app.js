@@ -33,6 +33,28 @@
     });
   });
   
+  
+  var check = require('validator').check;
+  app.post('/signup', function(req, res) {
+    // setTimeout(function() {
+    var email = req.body.email;
+    var rets = {
+      success: false,
+      errors: []
+    };
+
+    try {
+      check(email).len(6, 64).isEmail();
+      rets.success = true;
+    } catch (err) {
+      rets.errors.push("Invalid Email");
+      rets.success = false; //not necessary
+    }
+
+    res.send(rets);
+    //},2000);
+  });
+  
   //Only listen on $ node app.js
   if (!module.parent) {
     app.listen(3000);

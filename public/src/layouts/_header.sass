@@ -86,10 +86,22 @@ header
 			+border-radius(4px, 4px)
 			+linear-gradient(color-stops(white, #d2d2d2))
 			
-		form input
-			:float left
+		form 
+			input
+				:float left
+		input.highlight
+			:border 1px solid red
+		.message
+		.done
+			//:display none
+		.success, .error
+			:color #333
+			:display none
+		.loading
+			:display none
 	
 #technologies
 	:background #dddddd
 #technologies-inner
 	:height 75px
+	

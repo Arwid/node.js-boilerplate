@@ -1898,17 +1898,30 @@ header {
   background-image: -moz-linear-gradient(top, #ffffff 0%, #d2d2d2 100%);
   background-image: linear-gradient(top, #ffffff 0%, #d2d2d2 100%);
 }
-/* line 89, ../src/layouts/_header.sass */
+/* line 90, ../src/layouts/_header.sass */
 #headline-inner #signup form input {
   float: left;
 }
-
 /* line 92, ../src/layouts/_header.sass */
+#headline-inner #signup input.highlight {
+  border: 1px solid red;
+}
+/* line 97, ../src/layouts/_header.sass */
+#headline-inner #signup .success, #headline-inner #signup .error {
+  color: #333333;
+  display: none;
+}
+/* line 100, ../src/layouts/_header.sass */
+#headline-inner #signup .loading {
+  display: none;
+}
+
+/* line 103, ../src/layouts/_header.sass */
 #technologies {
   background: #dddddd;
 }
 
-/* line 94, ../src/layouts/_header.sass */
+/* line 105, ../src/layouts/_header.sass */
 #technologies-inner {
   height: 75px;
 }
