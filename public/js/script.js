@@ -26,7 +26,7 @@ $(function() {
     //Start the Ajax
     $.ajax({
       type: 'POST',
-      url: '/signup', 
+      url: '/invitation/request', 
       data: data,
       cache: false,
       success: function(data) {
@@ -39,8 +39,10 @@ $(function() {
             email.removeClass("highlight");
             $("#signup .success").fadeIn('slow');
           } else {
+            $("#signup .error").html(data.errors.join(','));
             $("#signup .error").fadeIn('slow');
             email.addClass("highlight");
+            email.focus();
           }
         } else {
           alert('Sorry, unexpected error. Please try again later.');

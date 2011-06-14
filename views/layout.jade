@@ -15,8 +15,8 @@ html(class='no-js', lang='en')
     //- TODO: X-UA-Compatible should be in server config instead
     
     title= title
-    meta(name='description', content='')
-    meta(name='author', content='')
+    meta(name='description', content='We Make Web Development Easy.')
+    //- meta(name='author', content='')
     
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     
@@ -27,19 +27,32 @@ html(class='no-js', lang='en')
       link(rel='stylesheet', href='/stylesheets/ie.css')
       
     script(src='js/libs/modernizr-2.0.min.js')
-    script(src='js/libs/respond.min.js')
+    //- script(src='js/libs/respond.min.js')
+    //- TODO: what's respond.js for?
     
-  body.bp.two-col  
-    #container
+  body  
+    section#container
       header
-        #header-inner!= partial('_header.jade')
-      #headline
-        #headline-inner!= partial('_headline.jade')
-      #technologies
-        #technologies-inner!= partial('_technologies.jade')
-      #main(role='main')!= body
+        hgroup
+          h1= title
+        nav
+          a(href="/")= title
+          a(href="/").active Home
+          a(href="/") Services
+          a(href="/") Blog
+      
+      section#main(role='main')!= body
+      
+      section#articles(role='main')
+        article#article1
+          h2 Photoshoot Effect
+          .body
+            p Some text
+      
       footer
-        #footer-inner!= partial('_footer.jade')
+        a(href='#') Blog
+        
+    //- JavaScript at bottom for faster page loading
     
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js')
     script window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.js"><\\/script>')

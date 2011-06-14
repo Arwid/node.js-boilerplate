@@ -1880,8 +1880,13 @@ header {
   outline: none;
   margin-left: 10px;
   cursor: pointer;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
 }
-/* line 80, ../src/layouts/_header.sass */
+/* line 91, ../src/layouts/_header.sass */
 #headline-inner #signup input[type='text'] {
   outline: none;
   font-size: 21px;
@@ -1898,36 +1903,68 @@ header {
   background-image: -moz-linear-gradient(top, #ffffff 0%, #d2d2d2 100%);
   background-image: linear-gradient(top, #ffffff 0%, #d2d2d2 100%);
 }
-/* line 90, ../src/layouts/_header.sass */
+/* line 101, ../src/layouts/_header.sass */
 #headline-inner #signup form input {
   float: left;
 }
-/* line 92, ../src/layouts/_header.sass */
+/* line 103, ../src/layouts/_header.sass */
 #headline-inner #signup input.highlight {
   border: 1px solid red;
+  -moz-box-shadow: red 0 0 1px 1px;
+  -webkit-box-shadow: red 0 0 1px 1px;
+  -o-box-shadow: red 0 0 1px 1px;
+  box-shadow: red 0 0 1px 1px;
 }
-/* line 97, ../src/layouts/_header.sass */
+/* line 109, ../src/layouts/_header.sass */
 #headline-inner #signup .success, #headline-inner #signup .error {
   color: #333333;
   display: none;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  padding: 2px 4px;
 }
-/* line 100, ../src/layouts/_header.sass */
+/* line 115, ../src/layouts/_header.sass */
+#headline-inner #signup .success {
+  background: rgba(200, 255, 200, 0.8);
+}
+/* line 117, ../src/layouts/_header.sass */
+#headline-inner #signup .error {
+  background: rgba(255, 200, 200, 0.8);
+}
+/* line 119, ../src/layouts/_header.sass */
 #headline-inner #signup .loading {
   display: none;
 }
 
-/* line 103, ../src/layouts/_header.sass */
+/* line 122, ../src/layouts/_header.sass */
 #technologies {
   background: #dddddd;
+  text-align: center;
+}
+/* line 125, ../src/layouts/_header.sass */
+#technologies h2 {
+  color: #555555;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
-/* line 105, ../src/layouts/_header.sass */
+/* line 129, ../src/layouts/_header.sass */
 #technologies-inner {
   height: 75px;
+  background: url(/images/technologies.jpg) no-repeat center bottom;
 }
 
 /* line 36, ../src/screen.sass */
-#header-inner, #headline-inner, #footer-inner, #main {
+header, #headline, #footer, #technologies {
+  min-width: 950px;
+}
+
+/* line 38, ../src/screen.sass */
+#header-inner, #headline-inner, #footer-inner, #main, #technologies-inner {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;

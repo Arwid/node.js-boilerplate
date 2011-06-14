@@ -8,7 +8,7 @@
   p.error.
     Invalid Email
   form(id="signup_form", action="/signup", method="post")
-    input(id="email",name="email",type="text",size="30",placeholder="Enter Your Email")
+    input(id="email",name="email",type="text",size="30",placeholder="your@email.com",tabindex='1')
     input(id="check",type="hidden",value="somevalue")
-    input(name="commit",type="submit",value="Sign up",src="")
+    input(name="commit",type="submit",value="Request Invite",tabindex='2')
     .loading

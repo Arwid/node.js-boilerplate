@@ -1,6 +1,7 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
+/* TODO: fill this out */
 
 /* TEAM */
   <your title>: <your name>
