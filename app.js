@@ -5,7 +5,7 @@
     cradle = require('cradle'),
     db = new(cradle.Connection)().database('vio_signups'),
     port = (process.env.PORT || 3000),
-    analyticssiteid = "2UA-XXXXX-X";
+    analyticssiteid = "UA-11049829-6";
   
   //Configuration
   app = module.exports = express.createServer();
