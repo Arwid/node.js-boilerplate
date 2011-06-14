@@ -6,6 +6,7 @@ Express.js
 CoffeeScript
 Jade
 Compass/Sass/Blueprint
+html5boilerplate
 
 == Watch files
 

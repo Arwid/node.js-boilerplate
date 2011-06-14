@@ -1,0 +1,25 @@
+!!! 5
+
+
+//- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+//- https://github.com/paulirish/html5-boilerplate
+/if lt IE 7
+  <html class="no-js ie6 oldie" lang="en">
+/if IE 7
+  <html class="no-js ie7 oldie" lang="en">
+/if IE 8
+  <html class="no-js ie8 oldie" lang="en">
+//[if gt IE 8]><!
+html(class='no-js', lang='en')
+  //<![endif]
+  
+  head!= partial('_head',{style_partial:'_stylesheets'})
+  body  
+    #container
+      header!= partial('_header')
+      
+      section#main(role='main')!= body
+      
+      footer!= partial('_footer')
+      
+      != partial('_javascripts')

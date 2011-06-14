@@ -14,20 +14,20 @@
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(express.cookieParser());
-    app.use(app.router);
-    return app.use(express.static(__dirname + '/public'));
+    app.use(express.static(__dirname + '/public'));
+    return app.use(app.router);
   });
   
-  // app.configure('development', function() {
-  //         return app.use(express.errorHandler({
-  //           dumpExceptions: true,
-  //           showStack: true
-  //         }));
-  //       });
-  //       
-  //       app.configure('production', function() {
-  //         return app.use(express.errorHandler());
-  //       });
+  app.configure('development', function() {
+    return app.use(express.errorHandler({
+      dumpExceptions: true,
+      showStack: true
+    }));
+  });
+
+  app.configure('production', function() {
+    return app.use(express.errorHandler());
+  });
   
   //Setup the errors
   //TODO: define within configure() blocks to provide
@@ -60,7 +60,8 @@
   
   app.get('/', function(req, res) {
     return res.render('index', {
-      title: 'Vertex.IO'
+      title: 'Vertex.IO',
+      layout: 'layouts/app'
     });
   });
   
@@ -100,6 +101,7 @@
   app.get('/404', function(req, res){
     throw new NotFound(req.url);
   })
+  
   //A Route for Creating a 500 Error (Useful to keep around)
   app.get('/500', function(req, res){
       next(new Error('keyboard cat!'));
