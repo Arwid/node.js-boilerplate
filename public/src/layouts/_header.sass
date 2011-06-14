@@ -1,132 +1,68 @@
-header
-	:background black url(/images/header-bg.jpg) no-repeat center top
+body.fixedh
+	#container
+		header
+			:position fixed
+			.top
+				:display block
 
-#header-inner
-	+clearfix
-	:position relative
-	:height 84px
-	
-#logo
-	:position absolute
-	:bottom 11px
-	:width 227px
-	:height 55px
-	:background url(/images/logo3.png) no-repeat
-	:text-indent -9999px
-		
-#nav
-	:position absolute
-	:bottom 24px
-	:right 40px
-	:line-height 20px
-
-	a
-		:color #ccc
-		:text-decoration none
-	a:hover
-		:color #009933
-	a.active
-		:color #fff
-		
-	.item
-		:font-size 14px
-		:line-height 20px
-		:height 20px
-		:float left
-		:display block
-		:list-style-type none
-		:padding 0 22px
-		
-/* Headline */
-#headline
-	:background black url(/images/bg.jpg) no-repeat center top
-	
-#headline-inner
-	:height 300px
-	
-	h1
-		:width 718px
-		:height 79px
-		:background url(/images/headline.png) no-repeat
-		:text-indent -9999px
-		:margin 0 auto
-			:top 50px
-			:bottom 30px
-			
-	#signup
-		:width 560px
-		:margin 0 auto
-		:text-align center
-		
-		p
-			:color #fff
-			:font-size 14px
-			:font-family Verdana
-			:margin-bottom 8px
-			:font-weight 100
-			span
-				:font-weight 900
-				
-		input[type='submit']
-			:width 175px
-			:height 37px
-			:background url(/images/request-btn.png)
-			:text-indent -9999px
-			:border none
-			:outline none
-			:margin-left 10px
-			:cursor pointer
-			// +border-radius(12px, 12px)
-			// +linear-gradient(color-stops(#009933, #007627))
-			// +box-shadow(#016723,0,0,1px,1px)
-			:font-family Arial
-			:font-weight 400
-			:font-size 20px
-			:line-height 20px
-			:color #fff
-		input[type='submit']:hover
-			// +linear-gradient(color-stops(#007627, #009933))
-			// +box-shadow(#007627,0,0,4px,4px,inset)
-		
-		input[type='text']
-			:outline none
-			:font-size 21px
-			:width 350px
-			:margin 0
-			:padding 5px 10px
-			+border-radius(4px, 4px)
-			+linear-gradient(color-stops(white, #d2d2d2))
-			
-		form 
-			input
-				:float left
-		input.highlight
-			:border 1px solid red
-			+box-shadow(#f00,0,0,1px,1px)
-		.message
-		.done
-			//:display none
-		.success, .error
-			:color #333
+#container
+	:padding-top 84px
+	header
+		:background black url(/images/header-bg.jpg) no-repeat center top
+		:height 84px
+		:top 0
+		:width 100%
+		:position absolute
+		.cinner
+			:position relative
+		.top
 			:display none
+			:font-size 12px
+			:position absolute
+			:left 200px
+			:color #999
+			:background rgba(0,0,0,0.3)
+			:padding-top -18px
 			+border-radius(4px,4px)
-			// +box-shadow(red,0,0,1px,1px)
-			:padding 2px 4px
-		.success
-			:background rgba(200,255,200,0.8)
-		.error
-			:background rgba(255,200,200,0.8)
-		.loading
+			
+			span
+				// :position absolute
+				// 				:top -18px
+				// 				:left 8px
+		#logo
+			:float left
+			:margin-top 15px
+		h2
 			:display none
-	
-#technologies
-	:background #dddddd
-	:text-align center
-	h2
-		:color #555
-		:font-size 12px
-		:margin-top 5px
-#technologies-inner
-	:height 75px
-	:background url(/images/technologies.jpg) no-repeat center bottom
-	
+		h1
+			a
+				:display block
+				:text-indent -999px /* hide text */
+				:width 227px
+				:height 55px
+				:background url(/images/logo.png) no-repeat
+		nav
+			:float right
+			:margin-top 35px
+			:margin-right 20px
+			:vertical-align center
+			a
+				:color #ccc
+				:text-decoration none
+				+transition(color, 0.25s)
+			a:hover, a.signup:hover
+				:color #009933
+			a.active
+				:color #fff
+				
+			a.signup
+				:color #39C
+			a
+				:font-size 14px
+				:line-height 20px
+				:height 20px
+				:float left
+				:display block
+				:list-style-type none
+				:margin 0 22px
+				:padding 2px 4px

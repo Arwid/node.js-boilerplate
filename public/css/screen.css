@@ -85,13 +85,13 @@ a img {
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: #333333;
+  color: #666666;
   font-size: 75%;
 }
 /* line 65, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {
   font-weight: normal;
-  color: #222222;
+  color: #555555;
 }
 /* line 66, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1 img, body.bp h2 img, body.bp h3 img, body.bp h4 img, body.bp h5 img, body.bp h6 img {
@@ -152,23 +152,23 @@ body.bp p img.right {
 /* line 77, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp a {
   text-decoration: underline;
-  color: #000099;
+  color: #3399cc;
 }
 /* line 18, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body.bp a:visited {
-  color: #000066;
+  color: #3399cc;
 }
 /* line 21, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body.bp a:focus {
-  color: black;
+  color: #009933;
 }
 /* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body.bp a:hover {
-  color: black;
+  color: #009933;
 }
 /* line 27, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body.bp a:active {
-  color: #cc0099;
+  color: #ff99cc;
 }
 /* line 78, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp blockquote {
@@ -276,11 +276,11 @@ body.bp caption {
 }
 /* line 102, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp .quiet {
-  color: #666666;
+  color: #999999;
 }
 /* line 103, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp .loud {
-  color: #111111;
+  color: #444444;
 }
 /* line 9, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .clear {
@@ -441,6 +441,319 @@ body.bp form.inline p {
   margin-bottom: 0;
 }
 
+/* line 26, ../src/partials/_page.sass */
+#container .cinner {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 28, ../src/partials/_page.sass */
+#container > *, #headline {
+  min-width: 950px;
+}
+
+/* line 30, ../src/partials/_page.sass */
+#container {
+  min-width: 950px;
+}
+
+/* line 33, ../src/partials/_page.sass */
+#tweets, #extras, #articles {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #tweets, * html #extras, * html #articles {
+  overflow-x: hidden;
+}
+
+/* line 35, ../src/partials/_page.sass */
+#tweets {
+  margin-right: 0;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  float: right;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #tweets {
+  overflow-x: hidden;
+}
+
+/* line 40, ../src/partials/_page.sass */
+#why, #solution {
+  color: #9a9a9a;
+}
+/* line 41, ../src/partials/_page.sass */
+#why > h2, #solution > h2 {
+  clear: both;
+  color: #aaaaaa;
+  text-shadow: black 1px 1px 5px;
+  margin-top: 8px;
+}
+/* line 46, ../src/partials/_page.sass */
+#why > h2 a, #solution > h2 a {
+  text-decoration: none;
+}
+/* line 49, ../src/partials/_page.sass */
+#why article, #solution article {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  padding: 6px 8px;
+  width: 212px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #why article, * html #solution article {
+  overflow-x: hidden;
+}
+/* line 53, ../src/partials/_page.sass */
+#why article h2, #solution article h2 {
+  line-height: 1em;
+  font-size: 20px;
+  color: #eeeeee;
+  text-shadow: #333333 1px 1px 1px;
+}
+/* line 58, ../src/partials/_page.sass */
+#why article h3, #solution article h3 {
+  color: #009933;
+  font-size: 15px;
+  text-shadow: #003e15 1px 1px 1px;
+}
+/* line 62, ../src/partials/_page.sass */
+#why article.last, #solution article.last {
+  margin-right: 0;
+}
+
+/* line 65, ../src/partials/_page.sass */
+#why, #solution {
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 6px;
+}
+
+/* line 69, ../src/partials/_page.sass */
+#solution {
+  border-top: dotted #cccccc 1px;
+  margin-bottom: 8px;
+}
+
+/* line 75, ../src/partials/_page.sass */
+#moreinfo {
+  background: white url(/images/logo_bg.jpg) repeat 0 0;
+  border-top: dotted #cccccc 1px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: #333333;
+}
+/* line 80, ../src/partials/_page.sass */
+#moreinfo #about .primary .fn {
+  font-size: 20px;
+}
+/* line 82, ../src/partials/_page.sass */
+#moreinfo .col {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #moreinfo .col {
+  overflow-x: hidden;
+}
+/* line 84, ../src/partials/_page.sass */
+#moreinfo .col.who {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #moreinfo .col.who {
+  overflow-x: hidden;
+}
+/* line 86, ../src/partials/_page.sass */
+#moreinfo .col.who ul {
+  padding: 0;
+}
+/* line 88, ../src/partials/_page.sass */
+#moreinfo .col.who li {
+  list-style: none;
+  float: left;
+  width: 50%;
+}
+/* line 93, ../src/partials/_page.sass */
+#moreinfo .col.who li a {
+  line-height: 32px;
+  display: block;
+}
+/* line 96, ../src/partials/_page.sass */
+#moreinfo .col.who li a span {
+  background: black url(/images/team.jpg) no-repeat left center;
+  width: 32px;
+  height: 32px;
+  display: block;
+  float: left;
+  margin-right: 4px;
+  border: 2px solid #eeeeee;
+  -moz-transition-property: border;
+  -webkit-transition-property: border;
+  -o-transition-property: border;
+  transition-property: border;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+/* line 106, ../src/partials/_page.sass */
+#moreinfo .col.who li a:hover span {
+  border: 2px solid #009933;
+}
+/* line 109, ../src/partials/_page.sass */
+#moreinfo .col.who li #geoff span {
+  background-position: 0 0;
+}
+/* line 111, ../src/partials/_page.sass */
+#moreinfo .col.who li #steve span {
+  background-position: -32px 0;
+}
+/* line 113, ../src/partials/_page.sass */
+#moreinfo .col.who li #brian span {
+  background-position: -64px 0;
+}
+/* line 115, ../src/partials/_page.sass */
+#moreinfo .col.who li #arwid span {
+  background-position: -96px 0;
+}
+/* line 117, ../src/partials/_page.sass */
+#moreinfo .col.connect {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  margin-right: 0;
+  float: right;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #moreinfo .col.connect {
+  overflow-x: hidden;
+}
+/* line 121, ../src/partials/_page.sass */
+#moreinfo .col.connect li {
+  list-style: none;
+}
+/* line 123, ../src/partials/_page.sass */
+#moreinfo h2 {
+  font-size: 14px;
+}
+/* line 126, ../src/partials/_page.sass */
+#moreinfo #about {
+  background: url(/images/logo_sm.png) no-repeat 0 10px;
+  min-height: 60px;
+}
+/* line 129, ../src/partials/_page.sass */
+#moreinfo #about > span, #moreinfo #about > p {
+  display: block;
+  margin-left: 80px;
+}
+/* line 132, ../src/partials/_page.sass */
+#moreinfo #about > p {
+  margin-top: 8px;
+}
+/* line 134, ../src/partials/_page.sass */
+#moreinfo #about .bio {
+  color: #999999;
+}
+
+/* line 137, ../src/partials/_page.sass */
+#container {
+  background: black url(/images/bg.jpg) no-repeat center 84px;
+}
+
+/* line 140, ../src/partials/_page.sass */
+p {
+  margin: 0 0 24px 0;
+}
+
+/* line 143, ../src/partials/_page.sass */
+article {
+  -moz-transition-property: color background;
+  -webkit-transition-property: color background;
+  -o-transition-property: color background;
+  transition-property: color background;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+}
+
+/* line 147, ../src/partials/_page.sass */
+article:hover {
+  color: white;
+  background: black;
+}
+
+/* line 152, ../src/partials/_page.sass */
+a {
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+/* line 155, ../src/partials/_page.sass */
+body, .message {
+  font-smooth: always;
+}
+
+/* line 158, ../src/partials/_page.sass */
+section {
+  position: relative;
+}
+
+/* line 160, ../src/partials/_page.sass */
+.anchor {
+  position: absolute;
+  top: -84px;
+}
+
+/* line 164, ../src/partials/_page.sass */
+header {
+  z-index: 999;
+}
+
+/* line 166, ../src/partials/_page.sass */
+#headline {
+  z-index: 1000;
+}
+
+/* line 169, ../src/partials/_page.sass */
+* {
+  outline: none;
+}
+
+/* line 174, ../src/partials/_page.sass */
+form #confuca {
+  display: none;
+}
+
 /* line 18, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp label {
   font-weight: bold;
@@ -541,14 +854,14 @@ body.two-col #content {
 body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: #333333;
+  color: #666666;
   font-size: 75%;
 }
 
 /* line 65, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  color: #222222;
+  color: #555555;
 }
 /* line 66, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
@@ -617,23 +930,23 @@ p img.right {
 /* line 77, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 a {
   text-decoration: underline;
-  color: #000099;
+  color: #3399cc;
 }
 /* line 18, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:visited {
-  color: #000066;
+  color: #3399cc;
 }
 /* line 21, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:focus {
-  color: black;
+  color: #009933;
 }
 /* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:hover {
-  color: black;
+  color: #009933;
 }
 /* line 27, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:active {
-  color: #cc0099;
+  color: #ff99cc;
 }
 
 /* line 78, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
@@ -765,12 +1078,12 @@ caption {
 
 /* line 102, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .quiet {
-  color: #666666;
+  color: #999999;
 }
 
 /* line 103, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .loud {
-  color: #111111;
+  color: #444444;
 }
 
 /* line 9, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
@@ -1758,92 +2071,116 @@ form.inline p {
   margin-bottom: 0;
 }
 
-/* line 22, ../src/screen.sass */
-html {
-  background: white;
+/* line 3, ../src/layouts/_header.sass */
+body.fixedh #container header {
+  position: fixed;
+}
+/* line 5, ../src/layouts/_header.sass */
+body.fixedh #container header .top {
+  display: block;
 }
 
-/* line 25, ../src/screen.sass */
-body {
-  font: 14px/24px helvetica, arial, sans-serif;
+/* line 8, ../src/layouts/_header.sass */
+#container {
+  padding-top: 84px;
 }
-
-/* line 27, ../src/screen.sass */
-a {
-  color: #00b7ff;
-}
-
-/* line 30, ../src/screen.sass */
-#main {
-  background: white;
-}
-
-/* line 1, ../src/layouts/_header.sass */
-header {
+/* line 10, ../src/layouts/_header.sass */
+#container header {
   background: black url(/images/header-bg.jpg) no-repeat center top;
-}
-
-/* line 4, ../src/layouts/_header.sass */
-#header-inner {
-  overflow: hidden;
-  *zoom: 1;
-  position: relative;
   height: 84px;
-}
-
-/* line 9, ../src/layouts/_header.sass */
-#logo {
+  top: 0;
+  width: 100%;
   position: absolute;
-  bottom: 11px;
+}
+/* line 16, ../src/layouts/_header.sass */
+#container header .cinner {
+  position: relative;
+}
+/* line 18, ../src/layouts/_header.sass */
+#container header .top {
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  left: 200px;
+  color: #999999;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: -18px;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+}
+/* line 32, ../src/layouts/_header.sass */
+#container header #logo {
+  float: left;
+  margin-top: 15px;
+}
+/* line 35, ../src/layouts/_header.sass */
+#container header h2 {
+  display: none;
+}
+/* line 38, ../src/layouts/_header.sass */
+#container header h1 a {
+  display: block;
+  text-indent: -999px;
   width: 227px;
   height: 55px;
-  background: url(/images/logo3.png) no-repeat;
-  text-indent: -9999px;
+  background: url(/images/logo.png) no-repeat;
 }
-
-/* line 17, ../src/layouts/_header.sass */
-#nav {
-  position: absolute;
-  bottom: 24px;
-  right: 40px;
-  line-height: 20px;
+/* line 44, ../src/layouts/_header.sass */
+#container header nav {
+  float: right;
+  margin-top: 35px;
+  margin-right: 20px;
+  vertical-align: center;
 }
-/* line 23, ../src/layouts/_header.sass */
-#nav a {
+/* line 49, ../src/layouts/_header.sass */
+#container header nav a {
   color: #cccccc;
   text-decoration: none;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
-/* line 26, ../src/layouts/_header.sass */
-#nav a:hover {
+/* line 53, ../src/layouts/_header.sass */
+#container header nav a:hover, #container header nav a.signup:hover {
   color: #009933;
 }
-/* line 28, ../src/layouts/_header.sass */
-#nav a.active {
+/* line 55, ../src/layouts/_header.sass */
+#container header nav a.active {
   color: white;
 }
-/* line 31, ../src/layouts/_header.sass */
-#nav .item {
+/* line 58, ../src/layouts/_header.sass */
+#container header nav a.signup {
+  color: #3399cc;
+}
+/* line 60, ../src/layouts/_header.sass */
+#container header nav a {
   font-size: 14px;
   line-height: 20px;
   height: 20px;
   float: left;
   display: block;
   list-style-type: none;
-  padding: 0 22px;
+  margin: 0 22px;
+  padding: 2px 4px;
 }
 
 /* Headline */
-/* line 41, ../src/layouts/_header.sass */
+/* line 4, ../src/layouts/_headline.sass */
 #headline {
   background: black url(/images/bg.jpg) no-repeat center top;
-}
-
-/* line 44, ../src/layouts/_header.sass */
-#headline-inner {
   height: 300px;
 }
-/* line 47, ../src/layouts/_header.sass */
-#headline-inner h1 {
+/* line 8, ../src/layouts/_headline.sass */
+#headline h1 {
   width: 718px;
   height: 79px;
   background: url(/images/headline.png) no-repeat;
@@ -1852,26 +2189,26 @@ header {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-/* line 56, ../src/layouts/_header.sass */
-#headline-inner #signup {
+/* line 17, ../src/layouts/_headline.sass */
+#headline #signup {
   width: 560px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 61, ../src/layouts/_header.sass */
-#headline-inner #signup p {
+/* line 22, ../src/layouts/_headline.sass */
+#headline #signup p {
   color: white;
   font-size: 14px;
   font-family: Verdana;
   margin-bottom: 8px;
   font-weight: 100;
 }
-/* line 67, ../src/layouts/_header.sass */
-#headline-inner #signup p span {
+/* line 28, ../src/layouts/_headline.sass */
+#headline #signup p span {
   font-weight: 900;
 }
-/* line 70, ../src/layouts/_header.sass */
-#headline-inner #signup input[type='submit'] {
+/* line 31, ../src/layouts/_headline.sass */
+#headline #signup input[type='submit'] {
   width: 175px;
   height: 37px;
   background: url(/images/request-btn.png);
@@ -1886,8 +2223,8 @@ header {
   line-height: 20px;
   color: white;
 }
-/* line 91, ../src/layouts/_header.sass */
-#headline-inner #signup input[type='text'] {
+/* line 52, ../src/layouts/_headline.sass */
+#headline #signup input[type='text'] {
   outline: none;
   font-size: 21px;
   width: 350px;
@@ -1903,20 +2240,20 @@ header {
   background-image: -moz-linear-gradient(top, #ffffff 0%, #d2d2d2 100%);
   background-image: linear-gradient(top, #ffffff 0%, #d2d2d2 100%);
 }
-/* line 101, ../src/layouts/_header.sass */
-#headline-inner #signup form input {
+/* line 62, ../src/layouts/_headline.sass */
+#headline #signup form input {
   float: left;
 }
-/* line 103, ../src/layouts/_header.sass */
-#headline-inner #signup input.highlight {
+/* line 64, ../src/layouts/_headline.sass */
+#headline #signup input.highlight {
   border: 1px solid red;
   -moz-box-shadow: red 0 0 1px 1px;
   -webkit-box-shadow: red 0 0 1px 1px;
   -o-box-shadow: red 0 0 1px 1px;
   box-shadow: red 0 0 1px 1px;
 }
-/* line 109, ../src/layouts/_header.sass */
-#headline-inner #signup .success, #headline-inner #signup .error {
+/* line 70, ../src/layouts/_headline.sass */
+#headline #signup .success, #headline #signup .error {
   color: #333333;
   display: none;
   -webkit-border-radius: 4px 4px;
@@ -1927,46 +2264,32 @@ header {
   border-radius: 4px / 4px;
   padding: 2px 4px;
 }
-/* line 115, ../src/layouts/_header.sass */
-#headline-inner #signup .success {
+/* line 76, ../src/layouts/_headline.sass */
+#headline #signup .success {
   background: rgba(200, 255, 200, 0.8);
 }
-/* line 117, ../src/layouts/_header.sass */
-#headline-inner #signup .error {
+/* line 78, ../src/layouts/_headline.sass */
+#headline #signup .error {
   background: rgba(255, 200, 200, 0.8);
 }
-/* line 119, ../src/layouts/_header.sass */
-#headline-inner #signup .loading {
+/* line 80, ../src/layouts/_headline.sass */
+#headline #signup .loading {
   display: none;
 }
 
-/* line 122, ../src/layouts/_header.sass */
+/* line 2, ../src/layouts/_technologies.sass */
 #technologies {
-  background: #dddddd;
   text-align: center;
+  height: 80px;
+  background: #dddddd url(/images/technologies.jpg) no-repeat center bottom;
+  -moz-box-shadow: black 0 1px 1px 0;
+  -webkit-box-shadow: black 0 1px 1px 0;
+  -o-box-shadow: black 0 1px 1px 0;
+  box-shadow: black 0 1px 1px 0;
 }
-/* line 125, ../src/layouts/_header.sass */
+/* line 4, ../src/layouts/_technologies.sass */
 #technologies h2 {
   color: #555555;
   font-size: 12px;
   margin-top: 5px;
-}
-
-/* line 129, ../src/layouts/_header.sass */
-#technologies-inner {
-  height: 75px;
-  background: url(/images/technologies.jpg) no-repeat center bottom;
-}
-
-/* line 36, ../src/screen.sass */
-header, #headline, #footer, #technologies {
-  min-width: 950px;
-}
-
-/* line 38, ../src/screen.sass */
-#header-inner, #headline-inner, #footer-inner, #main, #technologies-inner {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
 }

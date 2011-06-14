@@ -19,21 +19,8 @@
 +blueprint
 +blueprint-scaffolding
 
-html
-  :background #fff
-
-body
-  :font 14px/24px helvetica, arial, sans-serif
-a
-  :color #00B7FF
-
-#main
-  :background white
-
+// Custom Stylesheets
 @import layouts/header
 @import layouts/footer
-
-header, #headline, #footer, #technologies
-  :min-width $blueprint-container-size
-#header-inner, #headline-inner, #footer-inner, #main, #technologies-inner
-  +container
+@import layouts/headline
+@import layouts/technologies
